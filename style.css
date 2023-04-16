@@ -1,0 +1,27 @@
+*{
+    border: 2px solid red;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    height: 95vh;
+}
+
+.sidebar {
+    width: 25%;
+    min-width: 200px;
+}
+
+.main-body {
+    width: 75%;
+}
+
+.header { 
+    height: 20%;
+}
+
+.content {
+    display: grid;
+    height: 75%;
+}
