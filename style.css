@@ -3,18 +3,76 @@
     margin: 10px;
 }
 
+.sidebar {
+    color: white;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+.home-button {
+    background-image: url(./home.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.profile-button {
+    background-image: url(./profile.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.messages-button {
+    background-image: url(./messages.svg);
+    height: 20px;
+    width: 20px;
+}
+.history-button {
+    background-image: url(./history.svg);
+    height: 20px;
+    width: 20px;
+}
+.tasks-button {
+    background-image: url(./tasks.svg);
+    height: 20px;
+    width: 20px;
+}
+.communities-button {
+    background-image: url(./communities.svg);
+    height: 20px;
+    width: 20px;
+}
+.settings-button {
+    background-image: url(./settings.svg);
+    height: 20px;
+    width: 20px;
+}
+.support-button {
+    background-image: url(./support.svg);
+    height: 20px;
+    width: 20px;
+}
+.privacy-button {
+    background-image: url(./privacy.svg);
+    height: 20px;
+    width: 20px;
+}
+
 .container {
     display: flex;
     height: 95vh;
 }
 
 .sidebar {
-    width: 25%;
+    width: 20%;
     min-width: 200px;
+    background-color: #38bdf8;
 }
 
 .main-body {
-    width: 75%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows:  25% 75%;
@@ -39,6 +97,9 @@
 
 .secondary {
     grid-area: secondary;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 40% 10% 40%;
 }
 
 .content {
@@ -71,10 +132,4 @@
     height: 90%;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 33%);
-}
-
-.secondary {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 40% 10% 40%;
 }
