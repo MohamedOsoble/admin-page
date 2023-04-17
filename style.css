@@ -15,13 +15,66 @@
 
 .main-body {
     width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows:  25% 75%;
+    grid-template-areas:
+    "header header header"
+    "main main secondary"
+    "main main secondary"
+    "main main secondary"
 }
 
 .header { 
-    height: 20%;
+    grid-area: header;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 50% 50%;
+}
+
+.main {
+    grid-area: main;
+}
+
+.secondary {
+    grid-area: secondary;
 }
 
 .content {
     display: grid;
     height: 75%;
+}
+
+.search {
+    display: flex;
+}
+
+.header-login {
+    display: flex;
+}
+
+.user-greeting {
+    display: flex;
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.search-bar {
+    width: 600px;
+}
+
+.card-container {
+    display: grid;
+    height: 90%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 33%);
+}
+
+.secondary {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 40% 10% 40%;
 }
