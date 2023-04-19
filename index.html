@@ -12,45 +12,47 @@
     <div class="container">
         <div class="sidebar">
             <div class="nav-header">
-                🙪 Dashboard
-            </div>
+                <img class="dashboard-logo menu-button"> Dashboard </div>
             <div class="nav-main">
                 <ul>
-                    <li> <img class="home-button"> Home</li>
-                    <li> <img class="profile-button"> Profile</li>
-                    <li> <img class="messages-button"> Messages</li>
-                    <li> <img class="history-button"> History</li>
-                    <li> <img class="tasks-button"> Tasks</li>
-                    <li> <img class="communities-button"> Communities</li>
+                    <li> <img class="home-button menu-button"> Home</li>
+                    <li> <img class="profile-button menu-button"> Profile</li>
+                    <li> <img class="messages-button menu-button"> Messages</li>
+                    <li> <img class="history-button menu-button"> History</li>
+                    <li> <img class="tasks-button menu-button"> Tasks</li>
+                    <li> <img class="communities-button menu-button"> Communities</li>
                 </ul>
             </div>
             <div class="nav-footer">
                 <ul>
-                    <li> <img class="settings-button"> Settings</li>
-                    <li> <img class="support-button"> Support</li>
-                    <li> <img class="privacy-button"> Privacy</li>
+                    <li> <img class="settings-button menu-button"> Settings</li>
+                    <li> <img class="support-button menu-button"> Support</li>
+                    <li> <img class="privacy-button menu-button"> Privacy</li>
                 </ul>
             </div>
         </div>
         <div class="main-body">
             <div class="header">
                 <div class="search">
-                    <div class="search-button"> Button </div>
-                    <div class="search-bar"> Search Bar </div>
+                    <div class="search-button"> <img class="search-icon"> </div>
+                    <div class="search-bar"> <form id="search-form" role="search">
+                        <input type="search" id="search" name="search-bar"
+                        placeholder="Search..." aria-label="Search through the website content">
+                    </form> </div>
                 </div>
                 <div class="header-login">
-                    <div class="notifications-button"> Notifications button </div>
-                    <div class="profile-icon-1"> Profile icon </div>
-                    <div class="username"> Users name </div>                    
+                    <img class="notifications-button">
+                    <div> <img class="profile-icon-1" src="profile-icon.png"> </div>
+                    <h3>Mohamed Osoble</h3>                 
                 </div>
                 <div class="user-greeting">
-                    <div class="profile-icon-2"> Profile icon </div>
+                    <div><img class="profile-icon-2" src="profile-icon.png"></div>
                     <div class="greeting"> Hello there, <h2>Mohamed Osoble @mohamed</h2> </div>                    
                 </div>
                 <div class="header-buttons">
-                    <div class="header-button-1"> New </div>
-                    <div class="header-button-2"> Upload </div>
-                    <div class="header-button-3"> Share </div>                    
+                    <div class="header-button-1"> <button class="header-button" role="button">New</button> </div>
+                    <div class="header-button-2"> <button class="header-button" role="button">Upload</button> </div>
+                    <div class="header-button-3"> <button class="header-button" role="button">Share</button> </div>                    
                 </div>
             </div>
             <div class="main">
@@ -85,7 +87,7 @@
             <div class="trending-card">
                 Trending card
             </div>
-            </div>
+        </div>
         </div>
     </div>
 </body>
