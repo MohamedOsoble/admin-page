@@ -1,9 +1,11 @@
 /* *{
     border: 2px solid red;
-} */
+}  */
 
 /* Left side menu bar */
-
+body {
+    background-color: rgb(206, 206, 206);
+}
 .sidebar {
     color: white;
 }
@@ -103,10 +105,16 @@ li {
 
 .header { 
     grid-area: header;
-    height: 150px;
+    background-color: white;
+    margin-top: -7px;
+    height: 160px;
+    width: 101%;
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: 50% 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .search {
@@ -205,19 +213,21 @@ li {
 
 .container {
     display: flex;
-    height: 95vh;
+    height: 100vh;
 }
 
 .sidebar {
     width: 20%;
+    height: 105vh;
     min-width: 200px;
+    margin-top: -10px;
     background-color: #38bdf8;
 }
 
 .main-body {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: 37.5% 37.5% 25%;
     grid-template-rows:  25% 75%;
     grid-template-areas:
     "header header header"
@@ -229,6 +239,30 @@ li {
 .main {
     grid-area: main;
     background-color: rgb(206, 206, 206);
+    margin-top: -50px;
+}
+
+.main > h2 {
+    margin: 10px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 10px 398px;
+    grid-template-rows: 100%;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-highlight {
+    background-color: gold;
+}
+
+.card > * {
+    margin-left: 30px;
 }
 
 .secondary {
@@ -237,6 +271,7 @@ li {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 40% 10% 40%;
+    margin-top: -50px;
 }
 
 .content {
@@ -250,3 +285,5 @@ li {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 33%);
 }
+
+
